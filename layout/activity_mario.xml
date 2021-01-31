@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/marioback"
+    tools:context=".mario">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="131dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/back2"
+        android:gravity="center"
+        android:text="GOOD"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="131dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/back3"
+        android:gravity="center"
+        android:text="NEUTRAL"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="131dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/back4"
+        android:gravity="center"
+        android:text="BAD"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="310dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/back"
+        android:text='Remember, these are good picks for YOU to play AGAINST this character, so pick from the "good" category if you want your opponent to have a bad matchup!'
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="131dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:textSize="16dp"
+                    android:text="Jigglypuff\nKirby\nKing K. Rool\nIncineroar\nBatonetta\nSheik\nDonkey Kong\nRichter\nSimon\nMewtwo\nBowser Jr.\nVillager\nHero\nIsabelle\nRidley\nYoung Link\nPichu\nZelda\nR.O.B\nRobin" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="131dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:textSize="16dp"
+                    android:text="Mii Swordfighter\nWii Fit Trainer\nKing Dedede\nDark Pit\nPit\nGannondorg\nLittle Mac\nCharizard\nDark Samus\nSamus\nFalco\nLucas\nMii Gunner\nMii Brawler\nRyu\nLucario\nSonic\nNess\nBanjo and Kazooie\nMeta Knight\nDiddy Kong\nSquirtle\nYoung Link\nDr. Mario\nInkling\nCaptain Falcon\n Luigi\nPac-Man\nGreninja\nKen\nFox\nPihana Plant\nMarth\nCloud\nRoy\nWario\nBowser\nYoshi\nMega Man\nIke\nPikachu\nSnake\nDuck Hunt\nDaisy\nPeach\nLink\nOlimar\nIvysaur\nPokemon Trainer\nWolf" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="131dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:textSize="16dp"
+                    android:text="Joker\nIce Climbers\nChrom\nZero Suit Samus\nPalutena\nLucina\nShulk\nMr. Game and Watch" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
